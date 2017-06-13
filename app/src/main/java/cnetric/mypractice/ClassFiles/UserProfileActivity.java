@@ -16,7 +16,6 @@ import java.util.List;
 
 import cnetric.mypractice.ClassFiles.Frags.FirstFragment;
 import cnetric.mypractice.ClassFiles.Frags.SecondFragment;
-import cnetric.mypractice.ClassFiles.Frags.ThirdFragment;
 import cnetric.mypractice.R;
 
 /**
@@ -72,7 +71,7 @@ public class UserProfileActivity extends AppCompatActivity implements View.OnCli
     private void clickListener() {
         follow_tv.setOnClickListener(this);
         sendMessage_tv.setOnClickListener(this);
-        follow_tv.setTextColor(getResources().getColor(R.color.white));
+        follow_tv.setTextColor(getResources().getColor(R.color.White_White));
         follow_tv.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_green_button_effect));
     }
 
@@ -109,14 +108,14 @@ public class UserProfileActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.follow_tv:
-                follow_tv.setTextColor(getResources().getColor(R.color.white));
+                follow_tv.setTextColor(getResources().getColor(R.color.White_White));
                 follow_tv.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_green_button_effect));
 
                 sendMessage_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
                 sendMessage_tv.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_green));
                 break;
             case R.id.sendMessage_tv:
-                sendMessage_tv.setTextColor(getResources().getColor(R.color.white));
+                sendMessage_tv.setTextColor(getResources().getColor(R.color.White_White));
                 sendMessage_tv.setBackgroundDrawable(getResources().getDrawable(R.drawable.background_green_button_effect));
 
                 follow_tv.setTextColor(getResources().getColor(R.color.colorPrimary));
