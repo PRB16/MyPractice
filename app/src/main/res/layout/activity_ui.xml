@@ -1,0 +1,557 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6000000">
+
+    <RelativeLayout
+        android:id="@+id/ActionBar"
+        android:layout_width="385dp"
+        android:layout_height="45dp"
+        android:background="#FF35889A"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:background="#FF35889A"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <ImageButton
+            android:id="@+id/Back"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/images" />
+
+        <ImageView
+            android:id="@+id/title_img"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/images" />
+
+    </RelativeLayout>
+
+    <!--<ProgressBar
+        android:id="@+id/progressBar1"
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />-->
+
+
+    <RelativeLayout
+        android:id="@+id/newRl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--
+
+                <ImageView
+                    android:id="@+id/imgprogressBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible" />
+        -->
+        <ProgressBar
+            android:id="@+id/imgprogressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#FF35889A"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvprogressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="155dp"
+            android:paddingBottom="8dp"
+            android:text="Tilkobling"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="511dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/ll_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1">
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:id="@+id/rootRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#32A3BF" />
+
+                <LinearLayout
+                    android:id="@+id/rootLinearView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp">
+
+                        <ImageView
+                            android:id="@+id/VideoPoster"
+                            android:layout_width="150dp"
+                            android:layout_height="244dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/images"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:id="@+id/play"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/images"
+                            android:visibility="visible" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBarDownload"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:layout_centerInParent="true"
+                            android:max="100"
+                            android:progress="0" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/filmNameSynopsis"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/productionYear"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:textColor="#BDBDBD"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:id="@+id/ratingIcon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@mipmap/ic_launcher_round"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tvSize"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="#ffffff"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvDwnldPercentage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="60dp"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="#ffffff"
+                            android:textSize="8dp"
+                            android:textStyle="normal" />
+
+                        <Button
+                            android:id="@+id/downloadMoview"
+                            android:layout_width="175dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:text="Last ned filmen"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/rootLinearView"
+                    android:background="@color/transparent" />
+                <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/divider2"-->
+                <!--android:background="@drawable/filmbibwhiteicon"-->
+                <!--android:orientation="vertical"-->
+                <!--android:id="@+id/ldfdsl">-->
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider2"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/synopsis"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/ll"
+                    android:orientation="vertical"
+                    android:weightSum="3.2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/bg_for_ll"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/filmTypeTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight=".2"
+                            android:gravity="center|left"
+                            android:maxLines="1"
+                            android:text="FilmType: "
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/filmType"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".3"
+                            android:gravity="center|right"
+                            android:maxLines="5"
+                            android:text=" "
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/bg_for_ll"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/filmLengthTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight=".2"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:maxLines="1"
+                            android:text="SPILLETID:"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/filmLength"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".3"
+                            android:gravity="center|right"
+                            android:maxLines="5"
+                            android:text=" "
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/bg_for_ll"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/directorTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight=".2"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:maxLines="1"
+                            android:text="REGISSØR:"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/director"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".3"
+                            android:gravity="center|right"
+                            android:maxLines="5"
+                            android:text=" "
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/bg_for_ll"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/writerTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight=".2"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:maxLines="2"
+                            android:text="MANUS:"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/writer"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".3"
+                            android:gravity="center|right"
+                            android:maxLines="5"
+                            android:text=" "
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/bg_for_ll"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/musicTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight=".2"
+                            android:ellipsize="end"
+                            android:gravity="center|start"
+                            android:maxLines="2"
+                            android:text="MUSIKK AV:"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/music"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".3"
+                            android:gravity="center|right"
+                            android:maxLines="5"
+                            android:text=" "
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight=".7"
+                        android:background="@drawable/bg_for_ll"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/castTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight=".2"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:maxLines="2"
+                            android:text="MED: "
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/cast"
+                            android:layout_width="0dp"
+                            android:layout_height="33dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".5"
+                            android:gravity="top|right"
+                            android:maxLines="9"
+                            android:text=" "
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--</LinearLayout>-->
+
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

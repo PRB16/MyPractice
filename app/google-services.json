@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "933809520532",
+    "firebase_url": "https://fcm-practice-80fbb.firebaseio.com",
+    "project_id": "fcm-practice-80fbb",
+    "storage_bucket": "fcm-practice-80fbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933809520532:android:7df11be88462ed13",
+        "android_client_info": {
+          "package_name": "cnetric.mypractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933809520532-a7r784tlvpiucofvegclqr1eh7pgdk8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh_T99gzccjOqXX6xqCTvQFsRJCSyEcEo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

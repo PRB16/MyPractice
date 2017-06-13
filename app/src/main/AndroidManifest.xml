@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cnetric.mypractice">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.zako.android.locationapi.maps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/images"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/images"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ClassFiles.CoordinateDemoActivity" />
+        <activity android:name=".ClassFiles.RunTimePermissionActivity" />
+        <activity android:name=".ClassFiles.VolleyGsonActivity" />
+        <activity android:name=".ClassFiles.UiActivity" />
+        <activity android:name=".ClassFiles.FloatingActivity" />
+        <activity android:name=".ClassFiles.CircularFloatingActivity" />
+        <activity android:name=".ClassFiles.CustomMapActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB3RBMkbEFBZ2t3X9oIAyT9SOAyHdWA1Ro" />
+
+        <activity android:name=".ClassFiles.MapDemoActivity" />
+        <activity android:name=".ClassFiles.CurrentLocationActivity" />
+        <activity android:name=".ClassFiles.ShowLocOnMapActivity" />
+        <activity android:name=".ClassFiles.MapDemo.MapPracticeActivity" />
+        <activity android:name=".ClassFiles.NavigationActivity" />
+        <activity android:name=".ClassFiles.RecyclerHeaderFooter" />
+        <activity android:name=".ClassFiles.VolleySingletonActivity" />
+        <activity android:name=".ClassFiles.RetrofitPostActivity" />
+        <activity android:name=".ClassFiles.RunTimePermissionPhoneState" />
+        <activity
+            android:name=".ClassFiles.Frags.FragChangeActivity"
+            android:label="@string/title_activity_frag_change"
+            android:theme="@style/AppTheme">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".ClassFiles.UserProfileActivity">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".fcmDemo.FCMMainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ClassFiles.JavaScriptWebViewDemo" />
+        <activity android:name=".ClassFiles.ChennaiIntent" />
+        <activity android:name=".ClassFiles.WebviewDemoMain"></activity>
+
+        <!-- Firebase Notifications -->
+
+        <service android:name=".fcmDemo.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcmDemo.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- ./Firebase Notifications -->
+        <activity android:name=".ClassFiles.OrientationHandlingActivity" />
+        <activity android:name=".ClassFiles.DownloadResumeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClassFiles.JsonParsingActivity"></activity>
+    </application>
+
+</manifest>

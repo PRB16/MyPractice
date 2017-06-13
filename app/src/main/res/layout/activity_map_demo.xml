@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cnetric.mypractice.ClassFiles.MapDemoActivity">
+
+   <!-- <Button
+        android:id="@+id/btnMap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show Map"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_editor_absoluteY="117dp"
+        tools:layout_editor_absoluteX="117dp"/>
+
+    <Button
+        android:id="@+id/btnLoc"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Get Current Location"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_editor_absoluteY="57dp"
+        tools:layout_editor_absoluteX="57dp"/>-->
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Show Map"/>
+
+    <Button
+        android:id="@+id/btnLoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Current Location"/>
+
+    <Button
+        android:id="@+id/btnLocOnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Current Location"/>
+</LinearLayout>
